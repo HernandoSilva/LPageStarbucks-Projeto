@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--responsividade-->
+    <meta charset="UTF-8"><!-- define o padrao de acentaçao e os caracteres-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--copatibilidade entre navegadores-->
+    <meta name="description" content="Este site é um template de um site do Starbucks"><!--descriçao exemplificada do site-->
+    <meta http-equiv="X-UA-Compatible" content="IE=7"><!--versao do internet explorer-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"><!--compatibilidade do internet explorer-->
+    <meta name="keywords" content="starbucks,template,drinks,bebida">
+    <!-- <meta http-equiv="refresh" content="0; url=http://example.com">será redirecionado para outra pagina quando inoperante -->
+    <!-- CNTL+ ESPAÇO, busca o arquivo-->
+    <meta name="author" content="Starbucks">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Starbucks Landing Page</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="img/logo.png" class="logo" alt="logo starbucks"></a>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Novidades</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Não é apenas café <br> É <span>Starbucks</span></h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti pariatur quidem nihil tempore dicta aliquid blanditiis suscipit ullam, quod cumque, doloremque ipsam, sed error? Autem doloremque perspiciatis earum quis minima!</p>
+                <a href="#">Saiba Mais</a>
+            </div>
+            <div class="imgBox">
+            <img src="img/img1.png" class="starbucks" alt="bebida de pistache em copo de plástico">
+        </div>
+        </div>
+        <ul class="thumb">
+            <li><a href="#"><img src="img/img1.png" onclick="imgSlider('./img/img1.png'); changeCircleColor('#017143')" alt="imagem menor de um smothie verde de pistache"></a></li>
+            <li><a href="#"><img src="img/img2.png" onclick="imgSlider('./img/img2.png'); changeCircleColor('#eb7495')" alt="imagem menor de um somthie de morango"></a></li>
+            <li><a href="#"><img src="img/img3.png" onclick="imgSlider('./img/img3.png'); changeCircleColor('#d75983')" alt="imagem menor de um smothie de framboesa"></a></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="img/facebook.png"  alt="logo facebook"></a></li>
+            <li><a href="#"><img src="img/twitter.png"   alt="logo twitter"></a></li>
+            <li><a href="#"><img src="img/instagram.png" alt="logo instagram"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
